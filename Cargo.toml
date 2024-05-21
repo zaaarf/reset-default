@@ -1,0 +1,5 @@
+[workspace]
+members = [
+	"reset-default",
+	"reset-default-derive"
+]
