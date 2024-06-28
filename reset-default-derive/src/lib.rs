@@ -22,7 +22,7 @@ pub fn reset_default_fn(item: TokenStream) -> TokenStream {
 			impl #impl_generics reset_default::ResetDefault for #input_type #ty_generics #where_clause {
 				#[inline]
 				fn reset(&mut self) {
-					#(self.#field_names = Default::default();)*
+					#(self.#field_names = ::core::default::Default::default();)*
 				}
 			}
 		}.into()
